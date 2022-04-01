@@ -1,0 +1,459 @@
+html.olistic *,
+html.olistic *::after,
+html.olistic *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  overflow-x: hidden;
+}
+
+html.olistic {
+  font-size: 62.5%;
+}
+
+html.olistic body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #191919;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 65px;
+  background-color: white;
+}
+
+html.olistic #olistic-wrap .navbar-olistic {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+
+html.olistic #olistic-wrap .header {
+  background-image: url(./header.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html.olistic #olistic-wrap .navbar {
+  padding: 0;
+}
+
+html.olistic #olistic-wrap .navbar__components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.1rem 5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+html.olistic #olistic-wrap .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+html.olistic #olistic-wrap .col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+html.olistic #olistic-wrap .col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+html.olistic #olistic-wrap .col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+html.olistic #olistic-wrap .navbar__components--brand-name a img,
+html.olistic #olistic-wrap .footer__components--brand-name a img {
+  width: 18rem;
+}
+
+html.olistic #olistic-wrap .navbar__components--actions li {
+  font-size: 1.8rem;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+html.olistic #olistic-wrap .main-nav {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html.olistic #olistic-wrap .main-nav li.tab {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+html.olistic #olistic-wrap .main-nav li.tab a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+html.olistic #olistic-wrap .main-nav li.tab a:hover {
+  border-bottom: 3px solid #e6ad1e;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+html.olistic #olistic-wrap .navbar__components--actions li a {
+  color: #000;
+  text-decoration: none;
+}
+
+html.olistic #olistic-wrap .header__heading-box,
+html.olistic #olistic-wrap .features_heading-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+html.olistic #olistic-wrap .features__heading--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* margin-top: 12%; */
+  margin-left: 7%;
+  /* align-items: center; */
+}
+
+html.olistic #olistic-wrap .btn:link,
+html.olistic #olistic-wrap .btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 4rem;
+  border-radius: 10rem;
+  position: relative;
+  font-size: 1.8rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+html.olistic #olistic-wrap .btn-y:link,
+html.olistic #olistic-wrap .btn-y:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0rem;
+  position: relative;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+html.olistic #olistic-wrap .btn--blue {
+  background-color: transparent;
+  border: 1px solid #095685;
+  color: #095685;
+  font-weight: bold;
+}
+
+html.olistic #olistic-wrap .btn--blue:hover,
+html.olistic #olistic-wrap .btn--blue:active {
+  background-color: #095685;
+  border: 1px solid #095685;
+  color: #fff;
+  font-weight: bold;
+}
+
+html.olistic #olistic-wrap .btn--yellow {
+  background-color: #fcbb3d;
+  border: 1px solid #fcbb3d;
+  color: #fff;
+  font-weight: bold;
+}
+
+html.olistic #olistic-wrap .btn--yellow:hover,
+html.olistic #olistic-wrap .btn--yellow:active {
+  background-color: rgb(230, 171, 55);
+  border: 1px solid rgb(230, 171, 55);
+  color: #fff;
+  font-weight: bold;
+}
+
+html.olistic #olistic-wrap .btn--navigation {
+  padding: 0.8rem 3rem !important;
+  font-size: 1.6rem;
+}
+
+html.olistic #olistic-wrap .btn--navigation:hover {
+  background-color: #095685 !important;
+  border: 1px solid #095685 !important;
+}
+
+html.olistic #olistic-wrap .header__heading--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 12%;
+  margin-left: 7%;
+}
+html.olistic #olistic-wrap .header__heading-box--card,
+html.olistic #olistic-wrap .features__heading-box--card {
+  width: 42rem;
+  height: 32rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 1pxs 2px 6px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  padding: 2.2rem;
+}
+
+html.olistic #olistic-wrap .features__heading-box--card  {
+  height: 34rem;
+}
+
+html.olistic #olistic-wrap .card-text {
+  text-align: justify;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+html.olistic #olistic-wrap .card-text strong {
+  font-weight: bolder;
+}
+
+html.olistic #olistic-wrap section {
+  padding: 4.5rem 3rem;
+  min-height: 100vh;
+}
+
+html.olistic #olistic-wrap #features,
+html.olistic #olistic-wrap #whyolistic,
+html.olistic #olistic-wrap #contact,
+html.olistic #olistic-wrap #video {
+  padding-top: 7rem;
+}
+
+html.olistic #olistic-wrap .whyolistic__heading-box,
+html.olistic #olistic-wrap .contact__heading-box,
+html.olistic #olistic-wrap .video__heading-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+html.olistic #olistic-wrap .whyolistic__heading-box {
+  margin-bottom:7rem;
+}
+
+html.olistic #olistic-wrap .whyolistic__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html.olistic #olistic-wrap .whyolistic-row {
+  width: 100%;
+  display: flex;
+}
+
+html.olistic #olistic-wrap .whyolistic_card_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+html.olistic #olistic-wrap .whyolistic__card__image--img {
+  color: #095685;
+  font-size: 1.2rem;
+  width:40px;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+html.olistic #olistic-wrap .whyolistic__card__text {
+  width: 30rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+html.olistic #olistic-wrap .whyolistic__heading--title-h2,
+html.olistic #olistic-wrap .contact__heading--title-h2,
+html.olistic #olistic-wrap .video__heading--title-h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  margin: 2rem;
+}
+
+html.olistic #olistic-wrap .whyolistic__heading--title-h3,
+html.olistic #olistic-wrap .contact__heading--title-h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 2rem;
+}
+
+html.olistic #olistic-wrap .whyolistic__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+html.olistic #olistic-wrap .whyolistic__heading-box hr,
+html.olistic #olistic-wrap .contact__heading-box hr,
+html.olistic #olistic-wrap .video__heading-box hr{
+  margin-top: 0;
+  width: 10rem;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border-bottom: 2px solid #fcbb3d;
+}
+
+html.olistic #olistic-wrap section#features {
+  background-image: url(./features.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+html.olistic #olistic-wrap section#video {
+  background-image: url(./video.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+html.olistic #olistic-wrap .video-frame {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+html.olistic #olistic-wrap ul.arrow-list li{
+  background: url('./baseline-arrow_right-24px.svg') no-repeat left top;
+  height: 54px;
+  list-style: none;
+  padding-left: 44px;
+  padding-top: 3px;
+  line-height: 23px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+html.olistic #olistic-wrap .label-field {
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+}
+
+html.olistic #olistic-wrap .star-required {
+  line-height: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  color: #EF3636;
+}
+
+html.olistic #olistic-wrap .input-field {
+  width: 310px;
+  height: 54px;
+
+  border: 1px solid #D7D7D7;
+  box-sizing: border-box;
+}
+
+html.olistic #olistic-wrap .text-field {
+  line-height: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+html.olistic #olistic-wrap .mail-margin {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+html.olistic #olistic-wrap footer {
+  width: 100%;
+  height: 12rem;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+
+
+html.olistic #olistic-wrap .footer-elements {
+  width: 100%;
+}
+
+html.olistic #olistic-wrap .footer__components--actions{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+html.olistic #olistic-wrap .footer__components--actions ul {
+  list-style: none;
+}
+
+html.olistic #olistic-wrap .footer__components--brand-name a img {
+  padding: 20px;
+}
+
+html.olistic #olistic-wrap .img-footer {
+  margin-right: 1rem;
+}

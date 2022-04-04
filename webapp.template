@@ -15,7 +15,7 @@ server {
     
    location /api/ {
         # The following statement will proxy traffic to the upstream named Backend
-        proxy_pass http://backend;
+        proxy_pass http://Backend;
     }
 
     location / {

@@ -1,3 +1,8 @@
+# The identifier Backend is internal to nginx, and used to name this specific upstream
+upstream Backend {
+    # hello is the internal DNS name used by the backend Service inside Kubernetes
+    server backend;
+}
 server {
     listen       ${NGINX_PORT};
     server_name  localhost;
@@ -7,6 +12,11 @@ server {
 
     #charset koi8-r;
     access_log  /var/log/nginx/host.access.log  main;
+    
+   location /api/ {
+        # The following statement will proxy traffic to the upstream named Backend
+        proxy_pass http://Backend;
+    }
 
     location / {
         root   /usr/share/nginx/html;
@@ -14,15 +24,15 @@ server {
         try_files $uri /index.html;
     }
 
-    location /api/ {
-        proxy_pass http://${NGINX_HOST}:8080;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-        proxy_read_timeout 5m;
-    }
+    #location /api/ {
+    #    proxy_pass http://${NGINX_HOST}:8080;
+    #    proxy_http_version 1.1;
+    #    proxy_set_header Upgrade $http_upgrade;
+    #    proxy_set_header Connection 'upgrade';
+    #    proxy_set_header Host $host;
+    #    proxy_cache_bypass $http_upgrade;
+    #    proxy_read_timeout 5m;
+    #}
 
     location /api-pdf/ {
         proxy_pass http://${NGINX_HOST}:5000;
